@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate estudiantil</title>
+    <link rel="shortcut icon" href="./assets/podio.png" type="image/png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        :root{
+            --font-size-lg: 8rem;
+            --font-size-md: 3rem;
+            --font-size-sm: 1.5rem;
+            --font-family-poppins: "Poppins", serif;
+            --color-oxford-blue: #0B192F;
+            --color-aquamarine: #64FFDA;
+            --color-periwinke: #CCD6F6;
+            --color-cool-gray: #8892B0;
+
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            background-color: var(--color-oxford-blue);
+            box-sizing: border-box;
+        }
+
+        header{
+            width: 100%;
+            height: 5%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        header nav{
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        header nav ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul a {
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        header nav ul a img{
+            width: 2rem;
+            height: 2rem;
+            
+        }
+
+        main{
+            width: 100%;
+            height: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        main h1{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: var(--font-size-md);
+            color: var(--color-aquamarine);
+            font-family: var(--font-family-poppins);
+        }
+
+        main form{
+            width: 50%;
+            height: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        main form label, span{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: var(--font-size-md);
+            color: var(--color-cool-gray);
+            font-family: var(--font-family-poppins);
+        }
+
+        main form label, span{
+            font-size: var(--font-size-sm);
+        }
+
+        main form select, input, button{
+            width: 100%;
+            height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-oxford-blue);
+            border: solid 1px var(--color-aquamarine);
+            border-radius: 5px;
+            font-size: var(--font-size-sm);
+            color: var(--color-aquamarine);
+            cursor: pointer;
+        }
+
+        main form button:hover{
+            width: 100%;
+            height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-aquamarine);
+            border: solid 1px var(--color-aquamarine);
+            border-radius: 5px;
+            font-size: var(--font-size-sm);
+            color: var(--color-oxford-blue);
+            
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="./index.html"><img src="./assets/podio.png" alt=""></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Introduce la informacion para el debate</h1>
+
+        
+        <form id="form_debate">
+            <label for="">Equipo 1</label>
+            <select id="opciones_equipo_1" name="opciones_equipo_1">
+                <option value="" disabled selected>Introduce el nombre del equipo 1</option>
+                <option value="1°A">1°A</option>
+                <option value="1°B">1°B</option>
+                <option value="1°C">1°C</option>
+                <option value="1°D">1°D</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="">Equipo 2</label>
+            <select id="opciones_equipo_2" name="opciones_equipo_2">
+                <option value="" disabled selected>Introduce el nombre del equipo 2</option>
+                <option value="1°A">1°A</option>
+                <option value="1°B">1°B</option>
+                <option value="1°C">1°C</option>
+                <option value="1°D">1°D</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <span class="span_error" id="span_error"></span>
+            <button type="submit">Comenzar</button>
+        </form>
+    </main>
+
+    <script>
+        const form_debate = document.getElementById("form_debate")
+        let span_error = document.getElementById("span_error")
+
+        span_error.innerHTML = ""
+        
+
+        form_debate.addEventListener("submit", validar_formulario)
+
+        function validar_formulario(e){
+            e.preventDefault()
+            let valid = true
+
+            const name_team_1 = document.getElementById("opciones_equipo_1").value.trim()
+            const name_team_2 = document.getElementById("opciones_equipo_2").value.trim()
+
+            if (!name_team_1 || !name_team_2) {
+                span_error.innerHTML = "Selecciona ambos equipos."
+                valid = false
+            } else if (name_team_1 === name_team_2) {
+                span_error.innerHTML = "Los equipos no pueden ser iguales."
+                valid = false
+            } 
+
+            if(valid === true){
+                span_error.innerHTML = ""
+                localStorage.setItem("name_team_1", name_team_1)
+                localStorage.setItem("name_team_2", name_team_2)
+                window.location.href = 'timers.html';
+                
+            }
+        }
+    </script>
+</body>
+</html>

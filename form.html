@@ -157,6 +157,16 @@
 
         
         <form id="form_debate">
+            <label for="">Tema</label>
+            <select id="opciones_tema" name="opciones_tema">
+                <option value="" disabled selected>Introduce el tema del debate</option>
+                <option value="Cancelación en redes sociales">Cancelación en redes sociales</option>
+                <option value="Desigualdad tecnológica">Desigualdad tecnológica</option>
+            </select>
+
+            <br>
+            <br>
+
             <label for="">Equipo 1</label>
             <select id="opciones_equipo_1" name="opciones_equipo_1">
                 <option value="" disabled selected>Introduce el nombre del equipo 1</option>
@@ -201,6 +211,7 @@
             e.preventDefault()
             let valid = true
 
+            const opciones_tema = document.getElementById("opciones_tema").value.trim()
             const name_team_1 = document.getElementById("opciones_equipo_1").value.trim()
             const name_team_2 = document.getElementById("opciones_equipo_2").value.trim()
 
@@ -214,6 +225,7 @@
 
             if(valid === true){
                 span_error.innerHTML = ""
+                localStorage.setItem("opciones_tema", opciones_tema)
                 localStorage.setItem("name_team_1", name_team_1)
                 localStorage.setItem("name_team_2", name_team_2)
                 window.location.href = 'timers.html';

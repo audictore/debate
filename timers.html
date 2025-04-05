@@ -11,7 +11,7 @@
 
         :root{
             --font-size-lg: 10rem;
-            --font-size-md: 2rem;
+            --font-size-md: 3rem;
             --font-size-sm: 1.5rem;
             --font-family-poppins: "Poppins", serif;
             --color-oxford-blue: #0B192F;
@@ -100,35 +100,28 @@
         main{
             width: 100%;
             height: 70%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        main .div_equipo{
-            width: 50%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            
+            display: grid;
+            grid-template-columns: repeat(24, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            gap: 1rem;
+            padding: 1rem;
             box-sizing: border-box;
+
         }
 
-        main .div_equipo .div_equipo_nombres{
-            width: 100%;
-            height: 20%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+        main h2{
+            text-align: center;
+            font-size: var(--font-size-md);
+            color: var(--color-periwinke);
+            font-family: var(--font-family-poppins);
+            margin: 0;
+            padding: 0;
+            
         }
 
-        main .div_equipo .div_equipo_nombres h2{
-            all: unset;
-            font-size: var(--font-size-sm);
+        main span{
+            text-align: center;
+            font-size: var(--font-size-md);
             color: var(--color-aquamarine);
             font-family: var(--font-family-poppins);
             margin: 0;
@@ -136,51 +129,156 @@
             
         }
 
-        main .div_equipo .div_equipo_nombres span{
-            all: unset;
-            font-size: var(--font-size-sm);
-            color: var(--color-periwinke);
-            font-family: var(--font-family-poppins);
-            margin: 0;
-            padding: 0;
-        }
-
-        main .div_equipo .div_equipo_botones{
-            width: 100%;
-            height: 80%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        main .div_equipo .div_equipo_botones button{
-            width: 50%;
-            height: 4rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        main button{
             background-color: var(--color-oxford-blue);
             border: solid 1px var(--color-aquamarine);
             border-radius: 5px;
             font-size: var(--font-size-sm);
             color: var(--color-aquamarine);
             cursor: pointer;
+            
         }
 
-        main .div_equipo .div_equipo_botones button:hover{
-            width: 50%;
-            height: 4rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        main button:hover{
             background-color: var(--color-aquamarine);
             border: solid 1px var(--color-aquamarine);
             border-radius: 5px;
             font-size: var(--font-size-sm);
             color: var(--color-oxford-blue);
             cursor: pointer;
+            
         }
+
+        main .h2_team_1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 1/5/2/9;
+            
+        }
+
+        main .span_name_team_1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 2/5/3/9;
+
+        }
+
+        main .button_introduccion_team_1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 3/3/4/11;
+
+        }
+
+        main .button_exposicion_team_1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 4/3/5/11;
+
+        }
+
+        main .button_refutacciones_team_1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 5/3/6/23;
+
+        }
+
+        main .button_preguntas_team_1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 6/3/7/11;
+
+        }
+
+        main .button_conclusiones_team_1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 7/3/8/11;
+
+        }
+
+        main .h2_team_2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 1/17/2/21;
+
+        }
+
+        main .span_name_team_2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 2/17/3/21;
+
+        }
+
+        main .button_introduccion_team_2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 3/15/4/23;
+
+        }
+
+        main .button_exposicion_team_2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 4/15/5/23;
+
+        }
+
+        main .button_preguntas_team_2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 6/15/7/23;
+
+        }
+
+        main .button_conclusiones_team_2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: 7/15/8/23;
+
+        }
+
 
         .timer_introduccion_3min{
             width: 100%;
@@ -264,33 +362,22 @@
         <h1 id="div_tema_h1"></h1>
     </div>
     <main id="main">
-        <div class="div_equipo">
-            <div class="div_equipo_nombres">
-                <h2>Equipo 1</h2>
-                <span class="span_name_team_1" id="span_name_team_1"></span>
-            </div>
-            <div class="div_equipo_botones">
-                <button id="button_introduccion_team_1">Introduccion<br>(3 min.)</button>
-                <button id="button_exposicion_team_1">Exposicion de argumentos<br>(5 min.)</button>
-                <button>Refutaciones<br>(7 min.)</button>
-                <button>Preguntas de los evaluadores<br>(5 min.)</button>
-                <button>Conclusiones<br>(2 min.)</button>
-            </div>
-        </div>
-
-        <div class="div_equipo">
-            <div class="div_equipo_nombres">
-                <h2>Equipo 2</h2>
-                <span class="span_name_team_2" id="span_name_team_2"></span>
-            </div>
-            <div class="div_equipo_botones">
-                <button>Introduccion<br>(3 min.)</button>
-                <button>Exposicion de argumentos<br>(5 min.)</button>
-                <button>Refutaciones<br>(7 min.)</button>
-                <button>Preguntas de los evaluadores<br>(5 min.)</button>
-                <button>Conclusiones<br>(2 min.)</button>
-            </div>
-        </div>
+        
+        <h2 class="h2_team_1">Equipo 1</h2>
+        <span class="span_name_team_1" id="span_name_team_1"></span>
+        <button class="button_introduccion_team_1" id="button_introduccion_team_1">Introduccion<br>(3 min.)</button>
+        <button class="button_exposicion_team_1" id="button_exposicion_team_1">Exposicion de argumentos<br>(5 min.)</button>
+        <button class="button_refutacciones_team_1" id="button_refutacciones_team_1">Refutaciones<br>(10 min.)</button>
+        <button class="button_preguntas_team_1" id="button_preguntas_team_1">Preguntas de los evaluadores<br>(5 min.)</button>
+        <button class="button_conclusiones_team_1" id="button_conclusiones_team_1">Conclusiones<br>(2 min.)</button>
+        
+        <h2 class="h2_team_2">Equipo 2</h2>
+        <span class="span_name_team_2" id="span_name_team_2"></span>
+        <button class="button_introduccion_team_2" id="button_introduccion_team_2">Introduccion<br>(3 min.)</button>
+        <button class="button_exposicion_team_2" id="button_exposicion_team_2">Exposicion de argumentos<br>(5 min.)</button>
+        <button class="button_preguntas_team_2" id="button_preguntas_team_2">Preguntas de los evaluadores<br>(5 min.)</button>
+        <button class="button_conclusiones_team_2">Conclusiones<br>(2 min.)</button>
+            
         
     </main>
     

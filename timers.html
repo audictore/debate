@@ -10,7 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
         :root{
-            --font-size-lg: 10rem;
+            --font-size-lg: 30rem;
             --font-size-md: 3rem;
             --font-size-sm: 1.5rem;
             --font-family-poppins: "Poppins", serif;
@@ -189,7 +189,7 @@
 
         }
 
-        main .button_refutacciones_team_1{
+        main .button_refutacion_team_1{
             width: 100%;
             height: 100%;
             display: flex;
@@ -280,7 +280,79 @@
         }
 
 
-        .timer_introduccion_3min{
+        .timer_introduccion_3min_team_1{
+            width: 100%;
+            height: 95%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .timer_introduccion_3min_team_2{
+            width: 100%;
+            height: 95%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .timer_exposicion_5min_team_1{
+            width: 100%;
+            height: 95%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .timer_exposicion_5min_team_2{
+            width: 100%;
+            height: 95%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .timer_refutacion_10min_team_1{
+            width: 100%;
+            height: 95%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .timer_preguntas_5min_team_1{
+            width: 100%;
+            height: 95%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .timer_preguntas_5min_team_2{
+            width: 100%;
+            height: 95%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .timer_conclusiones_2min_team_1{
+            width: 100%;
+            height: 95%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .timer_conclusiones_2min_team_2{
             width: 100%;
             height: 95%;
             display: none;
@@ -367,7 +439,7 @@
         <span class="span_name_team_1" id="span_name_team_1"></span>
         <button class="button_introduccion_team_1" id="button_introduccion_team_1">Introduccion<br>(3 min.)</button>
         <button class="button_exposicion_team_1" id="button_exposicion_team_1">Exposicion de argumentos<br>(5 min.)</button>
-        <button class="button_refutacciones_team_1" id="button_refutacciones_team_1">Refutaciones<br>(10 min.)</button>
+        <button class="button_refutacion_team_1" id="button_refutacion_team_1">Refutaciones<br>(10 min.)</button>
         <button class="button_preguntas_team_1" id="button_preguntas_team_1">Preguntas de los evaluadores<br>(5 min.)</button>
         <button class="button_conclusiones_team_1" id="button_conclusiones_team_1">Conclusiones<br>(2 min.)</button>
         
@@ -376,32 +448,117 @@
         <button class="button_introduccion_team_2" id="button_introduccion_team_2">Introduccion<br>(3 min.)</button>
         <button class="button_exposicion_team_2" id="button_exposicion_team_2">Exposicion de argumentos<br>(5 min.)</button>
         <button class="button_preguntas_team_2" id="button_preguntas_team_2">Preguntas de los evaluadores<br>(5 min.)</button>
-        <button class="button_conclusiones_team_2">Conclusiones<br>(2 min.)</button>
+        <button class="button_conclusiones_team_2" id="button_conclusiones_team_2">Conclusiones<br>(2 min.)</button>
             
-        
     </main>
     
-    <section class="timer_introduccion_3min" id="timer_introduccion_3min_team_1"> 
+    <section class="timer_introduccion_3min_team_1" id="timer_introduccion_3min_team_1"> 
         <div class="section_span">
-            <span id="reloj_introduccion">3:00</span>
+            <span id="reloj_introduccion_team_1">3:00</span>
         </div>
         <div class="section_buttons">
-            <button id="reloj_introduccion_button_reiniciar_team_1">Reiniciar</button>
-            <button id="reloj_introduccion_button_pausar_team_1">Pausar</button>
-            <button id="reloj_introduccion_button_reanudar_team_1">Reanudar</button>
+            <button id="reloj_introduccion_button_salir_team_1">Salir ←</button>
+            <button id="reloj_introduccion_button_reiniciar_team_1">Reiniciar ↩︎</button>
+            <button id="reloj_introduccion_button_pausar_team_1">Pausar II</button>
+            <button id="reloj_introduccion_button_reanudar_team_1">Reanudar →</button>
         </div>
         
     </section>
 
-    <section class="timer_introduccion_3min" id="timer_introduccion_3min_team_2"> 
+    <section class="timer_introduccion_3min_team_2" id="timer_introduccion_3min_team_2"> 
         <div class="section_span">
-            <span id="reloj_introduccion">3:00</span>
+            <span id="reloj_introduccion_team_2">3:00</span>
         </div>
         <div class="section_buttons">
-            <button>Reiniciar</button>
-            <button>Pausar</button>
+            <button id="reloj_introduccion_button_salir_team_2">Salir ←</button>
+            <button id="reloj_introduccion_button_reiniciar_team_2">Reiniciar ↩︎</button>
+            <button id="reloj_introduccion_button_pausar_team_2">Pausar II</button>
+            <button id="reloj_introduccion_button_reanudar_team_2">Reanudar →</button>
         </div>
-        
+    </section>
+
+    <section class="timer_exposicion_5min_team_1" id="timer_exposicion_5min_team_1"> 
+        <div class="section_span">
+            <span id="reloj_exposicion_team_1">5:00</span>
+        </div>
+        <div class="section_buttons">
+            <button id="reloj_exposicion_button_salir_team_1">Salir ←</button>
+            <button id="reloj_exposicion_button_reiniciar_team_1">Reiniciar ↩︎</button>
+            <button id="reloj_exposicion_button_pausar_team_1">Pausar II</button>
+            <button id="reloj_exposicion_button_reanudar_team_1">Reanudar →</button>
+        </div>
+    </section>
+
+    <section class="timer_exposicion_5min_team_2" id="timer_exposicion_5min_team_2"> 
+        <div class="section_span">
+            <span id="reloj_exposicion_team_2">5:00</span>
+        </div>
+        <div class="section_buttons">
+            <button id="reloj_exposicion_button_salir_team_2">Salir ←</button>
+            <button id="reloj_exposicion_button_reiniciar_team_2">Reiniciar ↩︎</button>
+            <button id="reloj_exposicion_button_pausar_team_2">Pausar II</button>
+            <button id="reloj_exposicion_button_reanudar_team_2">Reanudar →</button>
+        </div>
+    </section>
+
+    <section class="timer_refutacion_10min_team_1" id="timer_refutacion_10min_team_1"> 
+        <div class="section_span">
+            <span id="reloj_refutacion_team_1">10:00</span>
+        </div>
+        <div class="section_buttons">
+            <button id="reloj_refutacion_button_salir_team_1">Salir ←</button>
+            <button id="reloj_refutacion_button_reiniciar_team_1">Reiniciar ↩︎</button>
+            <button id="reloj_refutacion_button_pausar_team_1">Pausar II</button>
+            <button id="reloj_refutacion_button_reanudar_team_1">Reanudar →</button>
+        </div>
+    </section>
+
+    <section class="timer_preguntas_5min_team_1" id="timer_preguntas_5min_team_1"> 
+        <div class="section_span">
+            <span id="reloj_preguntas_team_1">5:00</span>
+        </div>
+        <div class="section_buttons">
+            <button id="reloj_preguntas_button_salir_team_1">Salir ←</button>
+            <button id="reloj_preguntas_button_reiniciar_team_1">Reiniciar ↩︎</button>
+            <button id="reloj_preguntas_button_pausar_team_1">Pausar II</button>
+            <button id="reloj_preguntas_button_reanudar_team_1">Reanudar →</button>
+        </div>
+    </section>
+
+    <section class="timer_preguntas_5min_team_2" id="timer_preguntas_5min_team_2"> 
+        <div class="section_span">
+            <span id="reloj_preguntas_team_2">5:00</span>
+        </div>
+        <div class="section_buttons">
+            <button id="reloj_preguntas_button_salir_team_2">Salir ←</button>
+            <button id="reloj_preguntas_button_reiniciar_team_2">Reiniciar ↩︎</button>
+            <button id="reloj_preguntas_button_pausar_team_2">Pausar II</button>
+            <button id="reloj_preguntas_button_reanudar_team_2">Reanudar →</button>
+        </div>
+    </section>
+
+    <section class="timer_conclusiones_2min_team_1" id="timer_conclusiones_2min_team_1"> 
+        <div class="section_span">
+            <span id="reloj_conclusiones_team_1">2:00</span>
+        </div>
+        <div class="section_buttons">
+            <button id="reloj_conclusiones_button_salir_team_1">Salir ←</button>
+            <button id="reloj_conclusiones_button_reiniciar_team_1">Reiniciar ↩︎</button>
+            <button id="reloj_conclusiones_button_pausar_team_1">Pausar II</button>
+            <button id="reloj_conclusiones_button_reanudar_team_1">Reanudar →</button>
+        </div>
+    </section>
+
+    <section class="timer_conclusiones_2min_team_2" id="timer_conclusiones_2min_team_2"> 
+        <div class="section_span">
+            <span id="reloj_conclusiones_team_2">2:00</span>
+        </div>
+        <div class="section_buttons">
+            <button id="reloj_conclusiones_button_salir_team_2">Salir ←</button>
+            <button id="reloj_conclusiones_button_reiniciar_team_2">Reiniciar ↩︎</button>
+            <button id="reloj_conclusiones_button_pausar_team_2">Pausar II</button>
+            <button id="reloj_conclusiones_button_reanudar_team_2">Reanudar →</button>
+        </div>
     </section>
 
     <script>
@@ -415,16 +572,98 @@
 
         let div_tema = document.getElementById("div_tema")
         let main = document.getElementById("main")
-        let timer_introduccion_3min_team_1 = document.getElementById("timer_introduccion_3min_team_1")
 
+        let timer_introduccion_3min_team_1 = document.getElementById("timer_introduccion_3min_team_1")
         let button_introduccion_team_1 = document.getElementById("button_introduccion_team_1")
+        let reloj_introduccion_button_salir_team_1 = document.getElementById("reloj_introduccion_button_salir_team_1")
         let reloj_introduccion_button_reiniciar_team_1 = document.getElementById("reloj_introduccion_button_reiniciar_team_1")
         let reloj_introduccion_button_pausar_team_1 = document.getElementById("reloj_introduccion_button_pausar_team_1")
         let reloj_introduccion_button_reanudar_team_1 = document.getElementById("reloj_introduccion_button_reanudar_team_1")
+        let tiempo_restante_introduccion_team_1 = 180
+        let intervalo_introduccion_team_1
+        let en_marcha_introduccion_team_1 = false
 
-        let tiempoRestante = 180;
-        let intervalo;
-        let enMarcha = false;
+        let timer_introduccion_3min_team_2 = document.getElementById("timer_introduccion_3min_team_2")
+        let button_introduccion_team_2 = document.getElementById("button_introduccion_team_2")
+        let reloj_introduccion_button_salir_team_2 = document.getElementById("reloj_introduccion_button_salir_team_2")
+        let reloj_introduccion_button_reiniciar_team_2 = document.getElementById("reloj_introduccion_button_reiniciar_team_2")
+        let reloj_introduccion_button_pausar_team_2 = document.getElementById("reloj_introduccion_button_pausar_team_2")
+        let reloj_introduccion_button_reanudar_team_2 = document.getElementById("reloj_introduccion_button_reanudar_team_2")
+        let tiempo_restante_introduccion_team_2 = 180
+        let intervalo_introduccion_team_2
+        let en_marcha_introduccion_team_2 = false
+
+        let timer_exposicion_5min_team_1 = document.getElementById("timer_exposicion_5min_team_1")
+        let button_exposicion_team_1 = document.getElementById("button_exposicion_team_1")
+        let reloj_exposicion_button_salir_team_1 = document.getElementById("reloj_exposicion_button_salir_team_1")
+        let reloj_exposicion_button_reiniciar_team_1 = document.getElementById("reloj_exposicion_button_reiniciar_team_1")
+        let reloj_exposicion_button_pausar_team_1 = document.getElementById("reloj_exposicion_button_pausar_team_1")
+        let reloj_exposicion_button_reanudar_team_1 = document.getElementById("reloj_exposicion_button_reanudar_team_1")
+        let tiempo_restante_exposicion_team_1 = 300
+        let intervalo_exposicion_team_1
+        let en_marcha_exposicion_team_1 = false
+
+        let timer_exposicion_5min_team_2 = document.getElementById("timer_exposicion_5min_team_2")
+        let button_exposicion_team_2 = document.getElementById("button_exposicion_team_2")
+        let reloj_exposicion_button_salir_team_2 = document.getElementById("reloj_exposicion_button_salir_team_2")
+        let reloj_exposicion_button_reiniciar_team_2 = document.getElementById("reloj_exposicion_button_reiniciar_team_2")
+        let reloj_exposicion_button_pausar_team_2 = document.getElementById("reloj_exposicion_button_pausar_team_2")
+        let reloj_exposicion_button_reanudar_team_2 = document.getElementById("reloj_exposicion_button_reanudar_team_2")
+        let tiempo_restante_exposicion_team_2 = 300
+        let intervalo_exposicion_team_2
+        let en_marcha_exposicion_team_2 = false
+
+        let timer_refutacion_10min_team_1 = document.getElementById("timer_refutacion_10min_team_1")
+        let button_refutacion_team_1 = document.getElementById("button_refutacion_team_1")
+        let reloj_refutacion_button_salir_team_1 = document.getElementById("reloj_refutacion_button_salir_team_1")
+        let reloj_refutacion_button_reiniciar_team_1 = document.getElementById("reloj_refutacion_button_reiniciar_team_1")
+        let reloj_refutacion_button_pausar_team_1 = document.getElementById("reloj_refutacion_button_pausar_team_1")
+        let reloj_refutacion_button_reanudar_team_1 = document.getElementById("reloj_refutacion_button_reanudar_team_1")
+        let tiempo_restante_refutacion_team_1 = 600
+        let intervalo_refutacion_team_1
+        let en_marcha_refutacion_team_1 = false
+
+        let timer_preguntas_5min_team_1 = document.getElementById("timer_preguntas_5min_team_1")
+        let button_preguntas_team_1 = document.getElementById("button_preguntas_team_1")
+        let reloj_preguntas_button_salir_team_1 = document.getElementById("reloj_preguntas_button_salir_team_1")
+        let reloj_preguntas_button_reiniciar_team_1 = document.getElementById("reloj_preguntas_button_reiniciar_team_1")
+        let reloj_preguntas_button_pausar_team_1 = document.getElementById("reloj_preguntas_button_pausar_team_1")
+        let reloj_preguntas_button_reanudar_team_1 = document.getElementById("reloj_preguntas_button_reanudar_team_1")
+        let tiempo_restante_preguntas_team_1 = 300
+        let intervalo_preguntas_team_1
+        let en_marcha_preguntas_team_1 = false
+
+        let timer_preguntas_5min_team_2 = document.getElementById("timer_preguntas_5min_team_2")
+        let button_preguntas_team_2 = document.getElementById("button_preguntas_team_2")
+        let reloj_preguntas_button_salir_team_2 = document.getElementById("reloj_preguntas_button_salir_team_2")
+        let reloj_preguntas_button_reiniciar_team_2 = document.getElementById("reloj_preguntas_button_reiniciar_team_2")
+        let reloj_preguntas_button_pausar_team_2 = document.getElementById("reloj_preguntas_button_pausar_team_2")
+        let reloj_preguntas_button_reanudar_team_2 = document.getElementById("reloj_preguntas_button_reanudar_team_2")
+        let tiempo_restante_preguntas_team_2 = 300
+        let intervalo_preguntas_team_2
+        let en_marcha_preguntas_team_2 = false
+
+        let timer_conclusiones_2min_team_1 = document.getElementById("timer_conclusiones_2min_team_1")
+        let button_conclusiones_team_1 = document.getElementById("button_conclusiones_team_1")
+        let reloj_conclusiones_button_salir_team_1 = document.getElementById("reloj_conclusiones_button_salir_team_1")
+        let reloj_conclusiones_button_reiniciar_team_1 = document.getElementById("reloj_conclusiones_button_reiniciar_team_1")
+        let reloj_conclusiones_button_pausar_team_1 = document.getElementById("reloj_conclusiones_button_pausar_team_1")
+        let reloj_conclusiones_button_reanudar_team_1 = document.getElementById("reloj_conclusiones_button_reanudar_team_1")
+        let tiempo_restante_conclusiones_team_1 = 120
+        let intervalo_conclusiones_team_1
+        let en_marcha_conclusiones_team_1 = false
+
+        let timer_conclusiones_2min_team_2 = document.getElementById("timer_conclusiones_2min_team_2")
+        let button_conclusiones_team_2 = document.getElementById("button_conclusiones_team_2")
+        let reloj_conclusiones_button_salir_team_2 = document.getElementById("reloj_conclusiones_button_salir_team_2")
+        let reloj_conclusiones_button_reiniciar_team_2 = document.getElementById("reloj_conclusiones_button_reiniciar_team_2")
+        let reloj_conclusiones_button_pausar_team_2 = document.getElementById("reloj_conclusiones_button_pausar_team_2")
+        let reloj_conclusiones_button_reanudar_team_2 = document.getElementById("reloj_conclusiones_button_reanudar_team_2")
+        let tiempo_restante_conclusiones_team_2 = 120
+        let intervalo_conclusiones_team_2
+        let en_marcha_conclusiones_team_2 = false
+
+
 
         if (opciones_tema === "Cancelación en redes sociales") {
             div_tema_h1.innerHTML = opciones_tema + "<br>" + "¿Justicia digital o linchamiento virtual?"
@@ -434,6 +673,9 @@
 
         span_name_team_1.innerHTML = name_team_1
         span_name_team_2.innerHTML = name_team_2
+
+
+        //introduccion team 1 ------------------------------------------------------------------------------------------------------
 
         button_introduccion_team_1.addEventListener("click", abrir_timer_introduccion_team_1)
 
@@ -447,13 +689,13 @@
         }
 
         function actualizar_reloj_introduccion_team_1() {
-            let minutos = Math.floor(tiempoRestante / 60)
-            let segundos = tiempoRestante % 60
-            document.getElementById("reloj_introduccion").textContent = `${minutos}:${segundos < 10 ? '0' : ''}${segundos}`
+            let minutos = Math.floor(tiempo_restante_introduccion_team_1 / 60)
+            let segundos = tiempo_restante_introduccion_team_1 % 60
+            document.getElementById("reloj_introduccion_team_1").textContent = `${minutos}:${segundos < 10 ? '0' : ''}${segundos}`
 
             if(minutos === 0 && segundos === 0){
                 div_tema.style.display = "flex"
-                main.style.display = "flex"
+                main.style.display = "grid"
                 timer_introduccion_3min_team_1.style.display = "none"
                 button_introduccion_team_1.style.backgroundColor = "#8892B0"
                 button_introduccion_team_1.style.color = "#0B192F"
@@ -463,39 +705,640 @@
         }
 
         function iniciar_reloj_introduccion_team_1() {
-            if (!enMarcha) {
-                enMarcha = true
-                intervalo = setInterval(() => {
-                    if (tiempoRestante > 0) {
-                        tiempoRestante--
+            if (!en_marcha_introduccion_team_1) {
+                en_marcha_introduccion_team_1 = true
+                intervalo_introduccion_team_1 = setInterval(() => {
+                    if (tiempo_restante_introduccion_team_1 > 0) {
+                        tiempo_restante_introduccion_team_1--
                         actualizar_reloj_introduccion_team_1();
                     } else {
-                        clearInterval(intervalo)
-                        enMarcha = false
+                        clearInterval(intervalo_introduccion_team_1)
+                        en_marcha_introduccion_team_1 = false
                     }
                 }, 1000)
             }
         }
 
+        reloj_introduccion_button_salir_team_1.addEventListener("click", salir_reloj_introduccion_team_1)
+
+        function salir_reloj_introduccion_team_1(){
+            div_tema.style.display = "flex"
+            main.style.display = "grid"
+            timer_introduccion_3min_team_1.style.display = "none"
+            reiniciar_reloj_introduccion_team_1()
+            pausar_reloj_introduccion_team_1()
+        }
+
         reloj_introduccion_button_pausar_team_1.addEventListener("click", pausar_reloj_introduccion_team_1)
 
         function pausar_reloj_introduccion_team_1() {
-            clearInterval(intervalo)
-            enMarcha = false
+            clearInterval(intervalo_introduccion_team_1)
+            en_marcha_introduccion_team_1 = false
         }
 
         reloj_introduccion_button_reiniciar_team_1.addEventListener("click", reiniciar_reloj_introduccion_team_1)
 
         function reiniciar_reloj_introduccion_team_1() {
-            clearInterval(intervalo)
-            tiempoRestante = 180
+            clearInterval(intervalo_introduccion_team_1)
+            tiempo_restante_introduccion_team_1 = 180
             actualizar_reloj_introduccion_team_1()
-            enMarcha = false
+            en_marcha_introduccion_team_1 = false
             iniciar_reloj_introduccion_team_1()
         }
 
         reloj_introduccion_button_reanudar_team_1.addEventListener("click", iniciar_reloj_introduccion_team_1)
 
+
+        //introduccion team 2 ------------------------------------------------------------------------------------------------------
+
+        button_introduccion_team_2.addEventListener("click", abrir_timer_introduccion_team_2)
+
+        function abrir_timer_introduccion_team_2() {
+            div_tema.style.display = "none"
+            main.style.display = "none"
+            timer_introduccion_3min_team_2.style.display = "flex"
+        
+            actualizar_reloj_introduccion_team_2()
+            iniciar_reloj_introduccion_team_2()
+        }
+
+        function actualizar_reloj_introduccion_team_2() {
+            let minutos = Math.floor(tiempo_restante_introduccion_team_2 / 60)
+            let segundos = tiempo_restante_introduccion_team_2 % 60
+            document.getElementById("reloj_introduccion_team_2").textContent = `${minutos}:${segundos < 10 ? '0' : ''}${segundos}`
+
+            if(minutos === 0 && segundos === 0){
+                div_tema.style.display = "flex"
+                main.style.display = "grid"
+                timer_introduccion_3min_team_2.style.display = "none"
+                button_introduccion_team_2.style.backgroundColor = "#8892B0"
+                button_introduccion_team_2.style.color = "#0B192F"
+                button_introduccion_team_2.style.border = "none"
+                button_introduccion_team_2.style.cursor = "not-allowed"
+            }
+        }
+
+        function iniciar_reloj_introduccion_team_2() {
+            if (!en_marcha_introduccion_team_2) {
+                en_marcha_introduccion_team_2 = true
+                intervalo_introduccion_team_2 = setInterval(() => {
+                    if (tiempo_restante_introduccion_team_2 > 0) {
+                        tiempo_restante_introduccion_team_2--
+                        actualizar_reloj_introduccion_team_2();
+                    } else {
+                        clearInterval(intervalo_introduccion_team_2)
+                        en_marcha_introduccion_team_2 = false
+                    }
+                }, 1000)
+            }
+        }
+
+        reloj_introduccion_button_salir_team_2.addEventListener("click", salir_reloj_introduccion_team_2)
+
+        function salir_reloj_introduccion_team_2(){
+            div_tema.style.display = "flex"
+            main.style.display = "grid"
+            timer_introduccion_3min_team_2.style.display = "none"
+            reiniciar_reloj_introduccion_team_2()
+            pausar_reloj_introduccion_team_2()
+        }
+
+        reloj_introduccion_button_pausar_team_2.addEventListener("click", pausar_reloj_introduccion_team_2)
+
+        function pausar_reloj_introduccion_team_2() {
+            clearInterval(intervalo_introduccion_team_2)
+            en_marcha_introduccion_team_2 = false
+        }
+
+        reloj_introduccion_button_reiniciar_team_2.addEventListener("click", reiniciar_reloj_introduccion_team_2)
+
+        function reiniciar_reloj_introduccion_team_2() {
+            clearInterval(intervalo_introduccion_team_2)
+            tiempo_restante_introduccion_team_2 = 180
+            actualizar_reloj_introduccion_team_2()
+            en_marcha_introduccion_team_2 = false
+            iniciar_reloj_introduccion_team_2()
+        }
+
+        reloj_introduccion_button_reanudar_team_2.addEventListener("click", iniciar_reloj_introduccion_team_2)
+
+
+        //exposicion team 1 ------------------------------------------------------------------------------------------------------
+
+        button_exposicion_team_1.addEventListener("click", abrir_timer_exposicion_team_1)
+
+        function abrir_timer_exposicion_team_1() {
+            div_tema.style.display = "none"
+            main.style.display = "none"
+            timer_exposicion_5min_team_1.style.display = "flex"
+        
+            actualizar_reloj_exposicion_team_1()
+            iniciar_reloj_exposicion_team_1()
+        }
+
+        function actualizar_reloj_exposicion_team_1() {
+            let minutos = Math.floor(tiempo_restante_exposicion_team_1 / 60)
+            let segundos = tiempo_restante_exposicion_team_1 % 60
+            document.getElementById("reloj_exposicion_team_1").textContent = `${minutos}:${segundos < 10 ? '0' : ''}${segundos}`
+
+            if(minutos === 0 && segundos === 0){
+                div_tema.style.display = "flex"
+                main.style.display = "grid"
+                timer_exposicion_5min_team_1.style.display = "none"
+                button_exposicion_team_1.style.backgroundColor = "#8892B0"
+                button_exposicion_team_1.style.color = "#0B192F"
+                button_exposicion_team_1.style.border = "none"
+                button_exposicion_team_1.style.cursor = "not-allowed"
+            }
+        }
+
+        function iniciar_reloj_exposicion_team_1() {
+            if (!en_marcha_exposicion_team_1) {
+                en_marcha_exposicion_team_1 = true
+                intervalo_exposicion_team_1 = setInterval(() => {
+                    if (tiempo_restante_exposicion_team_1 > 0) {
+                        tiempo_restante_exposicion_team_1--
+                        actualizar_reloj_exposicion_team_1();
+                    } else {
+                        clearInterval(intervalo_exposicion_team_1)
+                        en_marcha_exposicion_team_1 = false
+                    }
+                }, 1000)
+            }
+        }
+
+        reloj_exposicion_button_salir_team_1.addEventListener("click", salir_reloj_exposicion_team_1)
+
+        function salir_reloj_exposicion_team_1(){
+            div_tema.style.display = "flex"
+            main.style.display = "grid"
+            timer_exposicion_5min_team_1.style.display = "none"
+            reiniciar_reloj_exposicion_team_1()
+            pausar_reloj_exposicion_team_1()
+        }
+
+        reloj_exposicion_button_pausar_team_1.addEventListener("click", pausar_reloj_exposicion_team_1)
+
+        function pausar_reloj_exposicion_team_1() {
+            clearInterval(intervalo_exposicion_team_1)
+            en_marcha_exposicion_team_1 = false
+        }
+
+        reloj_exposicion_button_reiniciar_team_1.addEventListener("click", reiniciar_reloj_exposicion_team_1)
+
+        function reiniciar_reloj_exposicion_team_1() {
+            clearInterval(intervalo_exposicion_team_1)
+            tiempo_restante_exposicion_team_1 = 300
+            actualizar_reloj_exposicion_team_1()
+            en_marcha_exposicion_team_1 = false
+            iniciar_reloj_exposicion_team_1()
+        }
+
+        reloj_exposicion_button_reanudar_team_1.addEventListener("click", iniciar_reloj_exposicion_team_1)
+
+
+        //exposicion team 2 ------------------------------------------------------------------------------------------------------
+
+        button_exposicion_team_2.addEventListener("click", abrir_timer_exposicion_team_2)
+
+        function abrir_timer_exposicion_team_2() {
+            div_tema.style.display = "none"
+            main.style.display = "none"
+            timer_exposicion_5min_team_2.style.display = "flex"
+        
+            actualizar_reloj_exposicion_team_2()
+            iniciar_reloj_exposicion_team_2()
+        }
+
+        function actualizar_reloj_exposicion_team_2() {
+            let minutos = Math.floor(tiempo_restante_exposicion_team_2 / 60)
+            let segundos = tiempo_restante_exposicion_team_2 % 60
+            document.getElementById("reloj_exposicion_team_2").textContent = `${minutos}:${segundos < 10 ? '0' : ''}${segundos}`
+
+            if(minutos === 0 && segundos === 0){
+                div_tema.style.display = "flex"
+                main.style.display = "grid"
+                timer_exposicion_5min_team_2.style.display = "none"
+                button_exposicion_team_2.style.backgroundColor = "#8892B0"
+                button_exposicion_team_2.style.color = "#0B192F"
+                button_exposicion_team_2.style.border = "none"
+                button_exposicion_team_2.style.cursor = "not-allowed"
+            }
+        }
+
+        function iniciar_reloj_exposicion_team_2() {
+            if (!en_marcha_exposicion_team_2) {
+                en_marcha_exposicion_team_2 = true
+                intervalo_exposicion_team_2 = setInterval(() => {
+                    if (tiempo_restante_exposicion_team_2 > 0) {
+                        tiempo_restante_exposicion_team_2--
+                        actualizar_reloj_exposicion_team_2();
+                    } else {
+                        clearInterval(intervalo_exposicion_team_2)
+                        en_marcha_exposicion_team_2 = false
+                    }
+                }, 1000)
+            }
+        }
+
+        reloj_exposicion_button_salir_team_2.addEventListener("click", salir_reloj_exposicion_team_2)
+
+        function salir_reloj_exposicion_team_2(){
+            div_tema.style.display = "flex"
+            main.style.display = "grid"
+            timer_exposicion_5min_team_2.style.display = "none"
+            reiniciar_reloj_exposicion_team_2()
+            pausar_reloj_exposicion_team_2()
+        }
+
+        reloj_exposicion_button_pausar_team_2.addEventListener("click", pausar_reloj_exposicion_team_2)
+
+        function pausar_reloj_exposicion_team_2() {
+            clearInterval(intervalo_exposicion_team_2)
+            en_marcha_exposicion_team_2 = false
+        }
+
+        reloj_exposicion_button_reiniciar_team_2.addEventListener("click", reiniciar_reloj_exposicion_team_2)
+
+        function reiniciar_reloj_exposicion_team_2() {
+            clearInterval(intervalo_exposicion_team_2)
+            tiempo_restante_exposicion_team_2 = 300
+            actualizar_reloj_exposicion_team_2()
+            en_marcha_exposicion_team_2 = false
+            iniciar_reloj_exposicion_team_2()
+        }
+
+        reloj_exposicion_button_reanudar_team_2.addEventListener("click", iniciar_reloj_exposicion_team_2)
+
+
+        //refutaciones teams ------------------------------------------------------------------------------------------------------
+
+        button_refutacion_team_1.addEventListener("click", abrir_timer_refutacion_team_1)
+
+        function abrir_timer_refutacion_team_1() {
+            div_tema.style.display = "none"
+            main.style.display = "none"
+            timer_refutacion_10min_team_1.style.display = "flex"
+        
+            actualizar_reloj_refutacion_team_1()
+            iniciar_reloj_refutacion_team_1()
+        }
+
+        function actualizar_reloj_refutacion_team_1() {
+            let minutos = Math.floor(tiempo_restante_refutacion_team_1 / 60)
+            let segundos = tiempo_restante_refutacion_team_1 % 60
+            document.getElementById("reloj_refutacion_team_1").textContent = `${minutos}:${segundos < 10 ? '0' : ''}${segundos}`
+
+            if(minutos === 0 && segundos === 0){
+                div_tema.style.display = "flex"
+                main.style.display = "grid"
+                timer_refutacion_10min_team_1.style.display = "none"
+                button_refutacion_team_1.style.backgroundColor = "#8892B0"
+                button_refutacion_team_1.style.color = "#0B192F"
+                button_refutacion_team_1.style.border = "none"
+                button_refutacion_team_1.style.cursor = "not-allowed"
+            }
+        }
+
+        function iniciar_reloj_refutacion_team_1() {
+            if (!en_marcha_refutacion_team_1) {
+                en_marcha_refutacion_team_1 = true
+                intervalo_refutacion_team_1 = setInterval(() => {
+                    if (tiempo_restante_refutacion_team_1 > 0) {
+                        tiempo_restante_refutacion_team_1--
+                        actualizar_reloj_refutacion_team_1()
+                    } else {
+                        clearInterval(intervalo_refutacion_team_1)
+                        en_marcha_refutacion_team_1 = false
+                    }
+                }, 1000)
+            }
+        }
+
+        reloj_refutacion_button_salir_team_1.addEventListener("click", salir_reloj_refutacion_team_1)
+
+        function salir_reloj_refutacion_team_1(){
+            div_tema.style.display = "flex"
+            main.style.display = "grid"
+            timer_refutacion_10min_team_1.style.display = "none"
+            reiniciar_reloj_refutacion_team_1()
+            pausar_reloj_refutacion_team_1()
+        }
+
+        reloj_refutacion_button_pausar_team_1.addEventListener("click", pausar_reloj_refutacion_team_1)
+
+        function pausar_reloj_refutacion_team_1() {
+            clearInterval(intervalo_refutacion_team_1)
+            en_marcha_refutacion_team_1 = false
+        }
+
+        reloj_refutacion_button_reiniciar_team_1.addEventListener("click", reiniciar_reloj_refutacion_team_1)
+
+        function reiniciar_reloj_refutacion_team_1() {
+            clearInterval(intervalo_refutacion_team_1)
+            tiempo_restante_refutacion_team_1 = 600
+            actualizar_reloj_refutacion_team_1()
+            en_marcha_refutacion_team_1 = false
+            iniciar_reloj_refutacion_team_1()
+        }
+
+        reloj_refutacion_button_reanudar_team_1.addEventListener("click", iniciar_reloj_refutacion_team_1)
+
+
+        //preguntas team 1 ------------------------------------------------------------------------------------------------------
+
+        button_preguntas_team_1.addEventListener("click", abrir_timer_preguntas_team_1)
+
+        function abrir_timer_preguntas_team_1() {
+            div_tema.style.display = "none"
+            main.style.display = "none"
+            timer_preguntas_5min_team_1.style.display = "flex"
+        
+            actualizar_reloj_preguntas_team_1()
+            iniciar_reloj_preguntas_team_1()
+        }
+
+        function actualizar_reloj_preguntas_team_1() {
+            let minutos = Math.floor(tiempo_restante_preguntas_team_1 / 60)
+            let segundos = tiempo_restante_preguntas_team_1 % 60
+            document.getElementById("reloj_preguntas_team_1").textContent = `${minutos}:${segundos < 10 ? '0' : ''}${segundos}`
+
+            if(minutos === 0 && segundos === 0){
+                div_tema.style.display = "flex"
+                main.style.display = "grid"
+                timer_preguntas_5min_team_1.style.display = "none"
+                button_preguntas_team_1.style.backgroundColor = "#8892B0"
+                button_preguntas_team_1.style.color = "#0B192F"
+                button_preguntas_team_1.style.border = "none"
+                button_preguntas_team_1.style.cursor = "not-allowed"
+            }
+        }
+
+        function iniciar_reloj_preguntas_team_1() {
+            if (!en_marcha_preguntas_team_1) {
+                en_marcha_preguntas_team_1 = true
+                intervalo_preguntas_team_1 = setInterval(() => {
+                    if (tiempo_restante_preguntas_team_1 > 0) {
+                        tiempo_restante_preguntas_team_1--
+                        actualizar_reloj_preguntas_team_1()
+                    } else {
+                        clearInterval(intervalo_preguntas_team_1)
+                        en_marcha_preguntas_team_1 = false
+                    }
+                }, 1000)
+            }
+        }
+
+        reloj_preguntas_button_salir_team_1.addEventListener("click", salir_reloj_preguntas_team_1)
+
+        function salir_reloj_preguntas_team_1(){
+            div_tema.style.display = "flex"
+            main.style.display = "grid"
+            timer_preguntas_5min_team_1.style.display = "none"
+            reiniciar_reloj_preguntas_team_1()
+            pausar_reloj_preguntas_team_1()
+        }
+
+        reloj_preguntas_button_pausar_team_1.addEventListener("click", pausar_reloj_preguntas_team_1)
+
+        function pausar_reloj_preguntas_team_1() {
+            clearInterval(intervalo_preguntas_team_1)
+            en_marcha_preguntas_team_1 = false
+        }
+
+        reloj_preguntas_button_reiniciar_team_1.addEventListener("click", reiniciar_reloj_preguntas_team_1)
+
+        function reiniciar_reloj_preguntas_team_1() {
+            clearInterval(intervalo_preguntas_team_1)
+            tiempo_restante_preguntas_team_1 = 300
+            actualizar_reloj_preguntas_team_1()
+            en_marcha_preguntas_team_1 = false
+            iniciar_reloj_preguntas_team_1()
+        }
+
+        reloj_preguntas_button_reanudar_team_1.addEventListener("click", iniciar_reloj_preguntas_team_1)
+
+
+        //preguntas team 2 ------------------------------------------------------------------------------------------------------
+
+        button_preguntas_team_2.addEventListener("click", abrir_timer_preguntas_team_2)
+
+        function abrir_timer_preguntas_team_2() {
+            div_tema.style.display = "none"
+            main.style.display = "none"
+            timer_preguntas_5min_team_2.style.display = "flex"
+        
+            actualizar_reloj_preguntas_team_2()
+            iniciar_reloj_preguntas_team_2()
+        }
+
+        function actualizar_reloj_preguntas_team_2() {
+            let minutos = Math.floor(tiempo_restante_preguntas_team_2 / 60)
+            let segundos = tiempo_restante_preguntas_team_2 % 60
+            document.getElementById("reloj_preguntas_team_2").textContent = `${minutos}:${segundos < 10 ? '0' : ''}${segundos}`
+
+            if(minutos === 0 && segundos === 0){
+                div_tema.style.display = "flex"
+                main.style.display = "grid"
+                timer_preguntas_5min_team_2.style.display = "none"
+                button_preguntas_team_2.style.backgroundColor = "#8892B0"
+                button_preguntas_team_2.style.color = "#0B192F"
+                button_preguntas_team_2.style.border = "none"
+                button_preguntas_team_2.style.cursor = "not-allowed"
+            }
+        }
+
+        function iniciar_reloj_preguntas_team_2() {
+            if (!en_marcha_preguntas_team_2) {
+                en_marcha_preguntas_team_2 = true
+                intervalo_preguntas_team_2 = setInterval(() => {
+                    if (tiempo_restante_preguntas_team_2 > 0) {
+                        tiempo_restante_preguntas_team_2--
+                        actualizar_reloj_preguntas_team_2()
+                    } else {
+                        clearInterval(intervalo_preguntas_team_2)
+                        en_marcha_preguntas_team_2 = false
+                    }
+                }, 1000)
+            }
+        }
+
+        reloj_preguntas_button_salir_team_2.addEventListener("click", salir_reloj_preguntas_team_2)
+
+        function salir_reloj_preguntas_team_2(){
+            div_tema.style.display = "flex"
+            main.style.display = "grid"
+            timer_preguntas_5min_team_2.style.display = "none"
+            reiniciar_reloj_preguntas_team_2()
+            pausar_reloj_preguntas_team_2()
+        }
+
+        reloj_preguntas_button_pausar_team_2.addEventListener("click", pausar_reloj_preguntas_team_2)
+
+        function pausar_reloj_preguntas_team_2() {
+            clearInterval(intervalo_preguntas_team_2)
+            en_marcha_preguntas_team_2 = false
+        }
+
+        reloj_preguntas_button_reiniciar_team_2.addEventListener("click", reiniciar_reloj_preguntas_team_2)
+
+        function reiniciar_reloj_preguntas_team_2() {
+            clearInterval(intervalo_preguntas_team_2)
+            tiempo_restante_preguntas_team_2 = 300
+            actualizar_reloj_preguntas_team_2()
+            en_marcha_preguntas_team_2 = false
+            iniciar_reloj_preguntas_team_2()
+        }
+
+        reloj_preguntas_button_reanudar_team_2.addEventListener("click", iniciar_reloj_preguntas_team_2)
+
+
+        //conclusiones team 1 ------------------------------------------------------------------------------------------------------
+
+        button_conclusiones_team_1.addEventListener("click", abrir_timer_conclusiones_team_1)
+
+        function abrir_timer_conclusiones_team_1() {
+            div_tema.style.display = "none"
+            main.style.display = "none"
+            timer_conclusiones_2min_team_1.style.display = "flex"
+        
+            actualizar_reloj_conclusiones_team_1()
+            iniciar_reloj_conclusiones_team_1()
+        }
+
+        function actualizar_reloj_conclusiones_team_1() {
+            let minutos = Math.floor(tiempo_restante_conclusiones_team_1 / 60)
+            let segundos = tiempo_restante_conclusiones_team_1 % 60
+            document.getElementById("reloj_conclusiones_team_1").textContent = `${minutos}:${segundos < 10 ? '0' : ''}${segundos}`
+
+            if(minutos === 0 && segundos === 0){
+                div_tema.style.display = "flex"
+                main.style.display = "grid"
+                timer_conclusiones_2min_team_1.style.display = "none"
+                button_conclusiones_team_1.style.backgroundColor = "#8892B0"
+                button_conclusiones_team_1.style.color = "#0B192F"
+                button_conclusiones_team_1.style.border = "none"
+                button_conclusiones_team_1.style.cursor = "not-allowed"
+            }
+        }
+
+        function iniciar_reloj_conclusiones_team_1() {
+            if (!en_marcha_conclusiones_team_1) {
+                en_marcha_conclusiones_team_1 = true
+                intervalo_conclusiones_team_1 = setInterval(() => {
+                    if (tiempo_restante_conclusiones_team_1 > 0) {
+                        tiempo_restante_conclusiones_team_1--
+                        actualizar_reloj_conclusiones_team_1()
+                    } else {
+                        clearInterval(intervalo_conclusiones_team_1)
+                        en_marcha_conclusiones_team_1 = false
+                    }
+                }, 1000)
+            }
+        }
+
+        reloj_conclusiones_button_salir_team_1.addEventListener("click", salir_reloj_conclusiones_team_1)
+
+        function salir_reloj_conclusiones_team_1(){
+            div_tema.style.display = "flex"
+            main.style.display = "grid"
+            timer_conclusiones_2min_team_1.style.display = "none"
+            reiniciar_reloj_conclusiones_team_1()
+            pausar_reloj_conclusiones_team_1()
+        }
+
+        reloj_conclusiones_button_pausar_team_1.addEventListener("click", pausar_reloj_conclusiones_team_1)
+
+        function pausar_reloj_conclusiones_team_1() {
+            clearInterval(intervalo_conclusiones_team_1)
+            en_marcha_conclusiones_team_1 = false
+        }
+
+        reloj_conclusiones_button_reiniciar_team_1.addEventListener("click", reiniciar_reloj_conclusiones_team_1)
+
+        function reiniciar_reloj_conclusiones_team_1() {
+            clearInterval(intervalo_conclusiones_team_1)
+            tiempo_restante_conclusiones_team_1 = 120
+            actualizar_reloj_conclusiones_team_1()
+            en_marcha_conclusiones_team_1 = false
+            iniciar_reloj_conclusiones_team_1()
+        }
+
+        reloj_conclusiones_button_reanudar_team_1.addEventListener("click", iniciar_reloj_conclusiones_team_1)
+
+
+        //conclusiones team 2 ------------------------------------------------------------------------------------------------------
+
+        button_conclusiones_team_2.addEventListener("click", abrir_timer_conclusiones_team_2)
+
+        function abrir_timer_conclusiones_team_2() {
+            div_tema.style.display = "none"
+            main.style.display = "none"
+            timer_conclusiones_2min_team_2.style.display = "flex"
+        
+            actualizar_reloj_conclusiones_team_2()
+            iniciar_reloj_conclusiones_team_2()
+        }
+
+        function actualizar_reloj_conclusiones_team_2() {
+            let minutos = Math.floor(tiempo_restante_conclusiones_team_2 / 60)
+            let segundos = tiempo_restante_conclusiones_team_2 % 60
+            document.getElementById("reloj_conclusiones_team_2").textContent = `${minutos}:${segundos < 10 ? '0' : ''}${segundos}`
+
+            if(minutos === 0 && segundos === 0){
+                div_tema.style.display = "flex"
+                main.style.display = "grid"
+                timer_conclusiones_2min_team_2.style.display = "none"
+                button_conclusiones_team_2.style.backgroundColor = "#8892B0"
+                button_conclusiones_team_2.style.color = "#0B192F"
+                button_conclusiones_team_2.style.border = "none"
+                button_conclusiones_team_2.style.cursor = "not-allowed"
+            }
+        }
+
+        function iniciar_reloj_conclusiones_team_2() {
+            if (!en_marcha_conclusiones_team_2) {
+                en_marcha_conclusiones_team_2 = true
+                intervalo_conclusiones_team_2 = setInterval(() => {
+                    if (tiempo_restante_conclusiones_team_2 > 0) {
+                        tiempo_restante_conclusiones_team_2--
+                        actualizar_reloj_conclusiones_team_2()
+                    } else {
+                        clearInterval(intervalo_conclusiones_team_2)
+                        en_marcha_conclusiones_team_2 = false
+                    }
+                }, 1000)
+            }
+        }
+
+        reloj_conclusiones_button_salir_team_2.addEventListener("click", salir_reloj_conclusiones_team_2)
+
+        function salir_reloj_conclusiones_team_2(){
+            div_tema.style.display = "flex"
+            main.style.display = "grid"
+            timer_conclusiones_2min_team_2.style.display = "none"
+            reiniciar_reloj_conclusiones_team_2()
+            pausar_reloj_conclusiones_team_2()
+        }
+
+        reloj_conclusiones_button_pausar_team_2.addEventListener("click", pausar_reloj_conclusiones_team_2)
+
+        function pausar_reloj_conclusiones_team_2() {
+            clearInterval(intervalo_conclusiones_team_2)
+            en_marcha_conclusiones_team_2 = false
+        }
+
+        reloj_conclusiones_button_reiniciar_team_2.addEventListener("click", reiniciar_reloj_conclusiones_team_2)
+
+        function reiniciar_reloj_conclusiones_team_2() {
+            clearInterval(intervalo_conclusiones_team_2)
+            tiempo_restante_conclusiones_team_2 = 120
+            actualizar_reloj_conclusiones_team_2()
+            en_marcha_conclusiones_team_2 = false
+            iniciar_reloj_conclusiones_team_2()
+        }
+
+        reloj_conclusiones_button_reanudar_team_2.addEventListener("click", iniciar_reloj_conclusiones_team_2)
 
         
     </script>
